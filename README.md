@@ -1,5 +1,5 @@
 # python-bghive
-Python interface to British Gas Hive API
+Python interface to British Gas Hive API (info from http://www.smartofthehome.com/2016/05/hive-rest-api-v6/)
 
 - Start by creating a session
 

@@ -103,3 +103,13 @@ class Node(object):
             }]
         }
         self.__session.request("PUT", "/nodes/%s" % self.id, data)
+    
+    def set_attributes(self, attributes):
+        attributeDict = {x:{"targetValue":attributes[x]} for x in attributes}
+
+        data = {
+            "nodes": [{
+                "attributes": attributeDict
+            }]
+        }
+        self.__session.request("PUT", "/nodes/%s" % self.id, data)
